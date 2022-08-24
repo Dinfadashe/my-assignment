@@ -1,24 +1,24 @@
                                      #parent class
 
 class student:
-    def __init__(person, firstname, lastname, height):
+    def __init__(person, firstname, lastname, age):
 
                            #instance variables of the parent class 
 
          person.firstname = firstname
          person.lastname = lastname
-         person.height = height
+         person.age = age
     
                       # method that returns all details for parent class object 
 
     def fullDetails(person): 
-         return f'Firstname: {person.firstname}\nLastname: {person.lastname}\nheight: {person.height}\nRank: {person.rank}' 
+         return f'Firstname: {person.firstname}\nLastname: {person.lastname}\nage: {person.age}\nRank: {person.rank}' 
 
                                        #child class (teacher) 
 
 class Teacher(student): 
-    def __init__(person, firstname, lastname, height, rank):
-        super().__init__(firstname, lastname, height)
+    def __init__(person, firstname, lastname, age, rank):
+        super().__init__(firstname, lastname, age)
         person.rank = rank
 
                                     #attributes for child class 
